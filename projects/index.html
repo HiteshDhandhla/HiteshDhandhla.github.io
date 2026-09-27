@@ -1,365 +1,509 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Hitesh Dhandhla</title>
-<meta name="description" content="Personal, in-progress and professional projects by Hitesh Dhandhla — .NET Full Stack Developer.">
-<link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Hitesh Dhandhla</title>
+  <meta name="description"
+    content="Personal, in-progress and professional projects by Hitesh Dhandhla — .NET Full Stack Developer.">
+  <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
-<div class="bg-schematic" aria-hidden="true"></div>
-<div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-schematic" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-<nav class="site-nav">
-  <div class="container-narrow">
-    <a href="/" class="brand"><span class="bracket">&lt;</span>Hitesh Dhandhla<span class="bracket">/&gt;</span></a>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="/#about">About</a></li>
-      <li><a href="/skills/">Skills</a></li>
-      <li><a href="/projects/" class="active">Projects</a></li>
-      <li><a href="/#experience">Experience</a></li>
-      <li><a href="/#education">Education</a></li>
-      <li><a href="/#contact">Contact</a></li>
-      <li><a class="nav-cta" href="/resume/Hitesh_Dhandhla.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down"></i> Resume</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="theme-switch" role="group" aria-label="Theme">
-        <button type="button" data-theme="dark" aria-pressed="true" aria-label="Dark theme"><i class="bi bi-moon-stars"></i></button>
-        <button type="button" data-theme="light" aria-pressed="false" aria-label="Light theme"><i class="bi bi-sun"></i></button>
+  <nav class="site-nav">
+    <div class="container-narrow">
+      <a href="/" class="brand"><span class="bracket">&lt;</span>Hitesh Dhandhla<span class="bracket">/&gt;</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/skills/">Skills</a></li>
+        <li><a href="/projects/" class="active">Projects</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#education">Education</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a class="nav-cta" href="/resume/Hitesh_Dhandhla.pdf" target="_blank" rel="noopener"><i
+              class="bi bi-file-earmark-arrow-down"></i> Resume</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="theme-switch" role="group" aria-label="Theme">
+          <button type="button" data-theme="dark" aria-pressed="true" aria-label="Dark theme"><i
+              class="bi bi-moon-stars"></i></button>
+          <button type="button" data-theme="light" aria-pressed="false" aria-label="Light theme"><i
+              class="bi bi-sun"></i></button>
+        </div>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i
+            class="bi bi-list"></i></button>
       </div>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="bi bi-list"></i></button>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<main>
-  <section class="page-hero">
-    <div class="container-narrow">
-      <a href="index.html" class="breadcrumb-back"><i class="bi bi-arrow-left"></i> Back home</a>
-      <span class="code-label">&lt; projects /&gt;</span>
-      <h1>What I've built, what I'm building, and what I've shipped for clients</h1>
-      <p>Three honest categories: personal projects you can see and run, personal projects still in architecture/planning, and professional work I can describe but not link to.</p>
-    </div>
-  </section>
-
-  <!-- TIER A -->
-  <section style="padding-top:0;" id="event-management">
-    <div class="container-narrow">
-      <div class="tier-divider" data-aos="fade-up">
-        <span class="tier-label">01 — Featured Personal Projects</span>
-        <span class="line"></span>
-        <span class="tier-label">Shipped &amp; source-available</span>
+  <main>
+    <section class="page-hero">
+      <div class="container-narrow">
+        <a href="index.html" class="breadcrumb-back"><i class="bi bi-arrow-left"></i> Back home</a>
+        <span class="code-label">&lt; projects /&gt;</span>
+        <h1>What I've built, what I'm building, and what I've shipped for clients</h1>
+        <p>Three honest categories: personal projects you can see and run, personal projects still in
+          architecture/planning, and professional work I can describe but not link to.</p>
       </div>
+    </section>
 
-      <article class="glass detail-card" data-aos="fade-up">
-        <div class="detail-head">
-          <div>
-            <span class="project-tag">.NET 8 · ASP.NET Core MVC · Entity Framework Core 9 · SQL Server</span>
-            <h3>Event Management — E-Zone It</h3>
-          </div>
-          <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal project</span>
-        </div>
-        <p class="desc">A role-based event-management web application connecting customers, event managers and service providers, so events can be booked, approved, fulfilled, tracked and paid for through one application.</p>
-
-        <div class="shot-gallery">
-          <div class="shot-frame">
-            <img src="/assets/images/event-management/event-management-1.png" alt="Event Management — booking dashboard" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-1.png</span></div>
-          </div>
-          <div class="shot-frame">
-            <img src="/assets/images/event-management/event-management-2.png" alt="Event Management — booking approval screen" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-2.png</span></div>
-          </div>
-          <div class="shot-frame">
-            <img src="/assets/images/event-management/event-management-3.png" alt="Event Management — service provider portal" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-3.png</span></div>
-          </div>
+    <!-- TIER A -->
+    <section style="padding-top:0;" id="event-management">
+      <div class="container-narrow">
+        <div class="tier-divider" data-aos="fade-up">
+          <span class="tier-label">01 — Featured Personal Projects</span>
+          <span class="line"></span>
+          <span class="tier-label">Shipped &amp; source-available</span>
         </div>
 
-        <div class="detail-columns">
-          <div>
-            <h4>Roles</h4>
-            <ul>
-              <li>Admin — master data, providers, staff, inquiries, feedback</li>
-              <li>Customer — booking, payment, feedback, status tracking</li>
-              <li>Event Manager — review, approval or rejection of bookings</li>
-              <li>Event Planner — assigned booking information</li>
-              <li>Service Provider — services, orders, work-progress updates</li>
-            </ul>
+        <article class="glass detail-card" data-aos="fade-up">
+          <div class="detail-head">
+            <div>
+              <span class="project-tag">.NET 8 · ASP.NET Core MVC · Entity Framework Core 9 · SQL Server</span>
+              <h3>Event Management — E-Zone It</h3>
+            </div>
+            <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal
+              project</span>
           </div>
-          <div>
-            <h4>Architecture</h4>
-            <ul>
-              <li>ASP.NET Core MVC with Razor views</li>
-              <li>Entity Framework Core 9 over SQL Server</li>
-              <li>Session-based authentication and role-specific portals</li>
-              <li>Bootstrap 5, jQuery, jQuery Validation on the client</li>
-            </ul>
-          </div>
-        </div>
-        <div class="detail-links">
-          <a href="https://github.com/HiteshDhandhla/EventManagement" target="_blank" rel="noopener"><i class="bi bi-github"></i> View repository</a>
-        </div>
-      </article>
-    </div>
-  </section>
+          <p class="desc">A role-based event-management web application connecting customers, event managers and service
+            providers, so events can be booked, approved, fulfilled, tracked and paid for through one application.</p>
 
-  <section style="padding-top:0;" id="cartflow">
-    <div class="container-narrow">
-      <article class="glass detail-card" data-aos="fade-up">
-        <div class="detail-head">
-          <div>
-            <span class="project-tag">.NET 10 · ASP.NET Core Web API · Entity Framework Core 10 · SQL Server LocalDB</span>
-            <h3>CartFlow API</h3>
+          <div class="shot-gallery">
+            <div class="shot-frame">
+              <img src="/assets/images/event-management/event-management-1.png"
+                alt="Event Management — booking dashboard" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-1.png</span></div>
+            </div>
+            <div class="shot-frame">
+              <img src="/assets/images/event-management/event-management-2.png"
+                alt="Event Management — booking approval screen" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-2.png</span></div>
+            </div>
+            <div class="shot-frame">
+              <img src="/assets/images/event-management/event-management-3.png"
+                alt="Event Management — service provider portal" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>event-management-3.png</span></div>
+            </div>
           </div>
-          <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal project</span>
-        </div>
-        <p class="desc">Positioned as a practical interview project. The ASP.NET Core backend for the CartFlow Angular app — owns product search, persistent cart state, price calculation, invoice generation and invoice history. Prices and totals are always calculated from database values and never trusted from the frontend.</p>
 
-        <div class="shot-gallery">
-          <div class="shot-frame">
-            <img src="/assets/images/cartflow/cartflow-1.png" alt="CartFlow — Add Cart page" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-1.png</span></div>
+          <div class="detail-columns">
+            <div>
+              <h4>Roles</h4>
+              <ul>
+                <li>Admin — master data, providers, staff, inquiries, feedback</li>
+                <li>Customer — booking, payment, feedback, status tracking</li>
+                <li>Event Manager — review, approval or rejection of bookings</li>
+                <li>Event Planner — assigned booking information</li>
+                <li>Service Provider — services, orders, work-progress updates</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Architecture</h4>
+              <ul>
+                <li>ASP.NET Core MVC with Razor views</li>
+                <li>Entity Framework Core 9 over SQL Server</li>
+                <li>Session-based authentication and role-specific portals</li>
+                <li>Bootstrap 5, jQuery, jQuery Validation on the client</li>
+              </ul>
+            </div>
           </div>
-          <div class="shot-frame">
-            <img src="/assets/images/cartflow/cartflow-2.png" alt="CartFlow — View Cart page" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-2.png</span></div>
+          <div class="detail-links">
+            <a href="https://github.com/HiteshDhandhla/EventManagement" target="_blank" rel="noopener"><i
+                class="bi bi-github"></i> View repository</a>
           </div>
-          <div class="shot-frame">
-            <img src="/assets/images/cartflow/cartflow-3.png" alt="CartFlow — Invoice dialog" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-3.png</span></div>
-          </div>
-        </div>
-
-        <div class="detail-columns">
-          <div>
-            <h4>Workflow</h4>
-            <ul>
-              <li>Search Products → Add Cart → View Cart → Generate Invoice → Print Invoice</li>
-              <li>Invoice generation runs inside a database transaction and marks the active cart as invoiced</li>
-              <li>Invoice numbers use the <code>INV-yyyyMMdd-0001</code> format</li>
-            </ul>
-          </div>
-          <div>
-            <h4>API surface</h4>
-            <ul>
-              <li><code>GET /api/categories</code>, <code>/api/products</code></li>
-              <li><code>GET /api/cart</code>, <code>POST /api/cart/items</code></li>
-              <li><code>POST /api/invoices</code>, <code>GET /api/invoices/{id}</code></li>
-              <li>OpenAPI document generation + Swagger UI</li>
-            </ul>
-          </div>
-        </div>
-        <div class="detail-links">
-          <a href="https://github.com/HiteshDhandhla/CartFlow.Api" target="_blank" rel="noopener"><i class="bi bi-github"></i> View repository</a>
-        </div>
-      </article>
-
-      <article class="glass detail-card" data-aos="fade-up">
-        <div class="detail-head">
-          <div>
-            <span class="project-tag">Angular</span>
-            <h3>CartFlow Angular UI</h3>
-          </div>
-          <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal project</span>
-        </div>
-        <p class="desc">The Angular front end for CartFlow — the Add Cart, View Cart, Invoice, and Print Invoice screens that consume the CartFlow API above. Also positioned as a practical interview project, and shown here as the other half of one complete full-stack workflow.</p>
-        <div class="detail-links">
-          <a href="https://github.com/HiteshDhandhla/cart-flow-ui" target="_blank" rel="noopener"><i class="bi bi-github"></i> View repository</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- TIER B -->
-  <section style="padding-top:0;" id="dhanvantaricare">
-    <div class="container-narrow">
-      <div class="tier-divider" data-aos="fade-up">
-        <span class="tier-label">02 — In Progress</span>
-        <span class="line"></span>
-        <span class="tier-label">Planning &amp; architecture — personal, not public</span>
+        </article>
       </div>
+    </section>
 
-      <article class="glass roadmap-card" data-aos="fade-up">
-        <div class="detail-head">
-          <div>
-            <span class="project-tag">Modular Clean/Onion Architecture · Dapper · Angular &amp; React</span>
-            <h3>DhanvantariCare</h3>
+    <section style="padding-top:0;" id="cartflow">
+      <div class="container-narrow">
+        <article class="glass detail-card" data-aos="fade-up">
+          <div class="detail-head">
+            <div>
+              <span class="project-tag">.NET 10 · ASP.NET Core Web API · Entity Framework Core 10 · SQL Server
+                LocalDB</span>
+              <h3>CartFlow API</h3>
+            </div>
+            <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal
+              project</span>
           </div>
-          <span class="status-chip">Planning &amp; Architecture</span>
-        </div>
-        <p class="desc">A single, unified healthcare platform spanning hospitals, clinics, pharmacies, laboratories, radiology, blood banks, ambulance services and home healthcare — plus a direct-to-patient portal. Designed as a modular Clean/Onion-Architecture monolith, with event-driven module communication and dual Angular/React frontends sharing one generated contract package. Deliberately launches as a modular monolith first — full microservices extraction, native mobile apps and Kubernetes are explicitly out of scope until later, approved phases.</p>
+          <p class="desc">Positioned as a practical interview project. The ASP.NET Core backend for the CartFlow Angular
+            app — owns product search, persistent cart state, price calculation, invoice generation and invoice history.
+            Prices and totals are always calculated from database values and never trusted from the frontend.</p>
 
-        <div class="roadmap-table-wrap">
-          <table class="roadmap-table">
-            <thead><tr><th>Phase</th><th>Focus</th><th>Outcome</th></tr></thead>
-            <tbody>
-              <tr><td>0–3</td><td>Repository, architecture, auth &amp; authorization</td><td>Secure foundation before any business data is introduced</td></tr>
-              <tr><td>4–6</td><td>Organization onboarding, branch ops &amp; branding</td><td>Hospitals/branches administered without cross-tenant leakage</td></tr>
-              <tr><td>7–10</td><td>Patient registration, providers, appointments</td><td>Care can be received with or without portal access</td></tr>
-              <tr><td>11–17</td><td>Clinical, diagnostics, lab, radiology, notifications</td><td>Diagnostic intent flows to verified longitudinal reports</td></tr>
-              <tr><td>18–21</td><td>Pharmacy, billing, insurance, inventory</td><td>Revenue-cycle workflows are transactional and reconciled</td></tr>
-              <tr><td>22–24</td><td>Recruitment, workforce, payroll, finance</td><td>Auditable time tracking with strict data separation</td></tr>
-              <tr><td>25–26</td><td>Telemedicine, home healthcare, ambulance</td><td>Extended &amp; emergency care with safe handoffs</td></tr>
-              <tr><td>27–28</td><td>Inpatient, surgery/theatre, equipment assets</td><td>Concurrency-safe, historically traceable operations</td></tr>
-              <tr><td>29–33</td><td>Audit, interoperability, consent, GA hardening</td><td>Platform resilience passes General Availability gates</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="roadmap-note">34 small, dependency-gated phases in total — each requires documented acceptance evidence and passing tests before it counts as done. Repositories and live progress are not public yet.</p>
-      </article>
-    </div>
-  </section>
-
-  <section style="padding-top:0;" id="ratnakarlabs">
-    <div class="container-narrow">
-      <article class="glass roadmap-card" data-aos="fade-up">
-        <div class="detail-head">
-          <div>
-            <span class="project-tag">YARP Gateway · ASP.NET Core 10 · Dapper · Angular 22+ &amp; React 20+</span>
-            <h3>RatnakarLabs — Ratnakar Commerce Platform</h3>
+          <div class="shot-gallery">
+            <div class="shot-frame">
+              <img src="/assets/images/cartflow/cartflow-1.png" alt="CartFlow — Add Cart page" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-1.png</span></div>
+            </div>
+            <div class="shot-frame">
+              <img src="/assets/images/cartflow/cartflow-2.png" alt="CartFlow — View Cart page" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-2.png</span></div>
+            </div>
+            <div class="shot-frame">
+              <img src="/assets/images/cartflow/cartflow-3.png" alt="CartFlow — Invoice dialog" loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="shot-fallback"><i class="bi bi-image"></i><span>cartflow-3.png</span></div>
+            </div>
           </div>
-          <span class="status-chip">Planning &amp; Architecture</span>
-        </div>
-        <p class="desc">A microservices e-commerce platform built as a study and portfolio project — practicing a YARP API Gateway, event-driven service integration, and parallel Angular and React clients built against one shared backend contract. Structured across seven independently versioned repositories (services, Angular, React, shared contracts, docs, DevOps, Postman). A mobile client is explicitly out of scope for now.</p>
 
-        <div class="roadmap-table-wrap">
-          <table class="roadmap-table">
-            <thead><tr><th>Milestone</th><th>Phases</th><th>Outcome</th></tr></thead>
-            <tbody>
-              <tr><td>0.1.0</td><td>Phase 0</td><td>Reproducible repos, local infra, CI, contracts, docs foundation</td></tr>
-              <tr><td>0.2.0</td><td>Phases 1–2</td><td>Secure sign-in/profile, browsable catalog, seller inventory</td></tr>
-              <tr><td>0.3.0</td><td>Phase 3</td><td>Persistent cart, wishlist and coupon journeys in both clients</td></tr>
-              <tr><td>0.5.0</td><td>Phases 4–5</td><td>Idempotent checkout, inventory reservation, sandbox payment</td></tr>
-              <tr><td>0.6.0</td><td>Phases 6–7</td><td>Shipment tracking, notifications, live updates, invoices</td></tr>
-              <tr><td>0.8.0</td><td>Phases 8–9</td><td>Reviews, moderation, admin dashboards and reporting</td></tr>
-              <tr><td>1.0.0</td><td>Phase 10</td><td>Hardened, observable, tested, containerized release</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="roadmap-note">Designed to demonstrate JWT/refresh-token rotation, database-per-service ownership, Redis, RabbitMQ, SignalR live updates, Docker/Kubernetes/CI-CD and OpenTelemetry — repositories are not public yet.</p>
-      </article>
-    </div>
-  </section>
+          <div class="detail-columns">
+            <div>
+              <h4>Workflow</h4>
+              <ul>
+                <li>Search Products → Add Cart → View Cart → Generate Invoice → Print Invoice</li>
+                <li>Invoice generation runs inside a database transaction and marks the active cart as invoiced</li>
+                <li>Invoice numbers use the <code>INV-yyyyMMdd-0001</code> format</li>
+              </ul>
+            </div>
+            <div>
+              <h4>API surface</h4>
+              <ul>
+                <li><code>GET /api/categories</code>, <code>/api/products</code></li>
+                <li><code>GET /api/cart</code>, <code>POST /api/cart/items</code></li>
+                <li><code>POST /api/invoices</code>, <code>GET /api/invoices/{id}</code></li>
+                <li>OpenAPI document generation + Swagger UI</li>
+              </ul>
+            </div>
+          </div>
+          <div class="detail-links">
+            <a href="https://github.com/HiteshDhandhla/CartFlow.Api" target="_blank" rel="noopener"><i
+                class="bi bi-github"></i> View repository</a>
+          </div>
+        </article>
 
-  <!-- TIER C -->
-  <section style="padding-top:0;">
-    <div class="container-narrow">
-      <div class="tier-divider" data-aos="fade-up">
-        <span class="tier-label">03 — Professional Projects</span>
-        <span class="line"></span>
-        <span class="tier-label">Client / employer work — described, not linked</span>
+        <article class="glass detail-card" data-aos="fade-up">
+          <div class="detail-head">
+            <div>
+              <span class="project-tag">Angular</span>
+              <h3>CartFlow Angular UI</h3>
+            </div>
+            <span class="status-chip" style="background:rgba(94,234,212,0.14); color:var(--accent);">Completed personal
+              project</span>
+          </div>
+          <p class="desc">The Angular front end for CartFlow — the Add Cart, View Cart, Invoice, and Print Invoice
+            screens that consume the CartFlow API above. Also positioned as a practical interview project, and shown
+            here as the other half of one complete full-stack workflow.</p>
+          <div class="detail-links">
+            <a href="https://github.com/HiteshDhandhla/cart-flow-ui" target="_blank" rel="noopener"><i
+                class="bi bi-github"></i> View repository</a>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <article class="glass org-card" data-aos="fade-up">
-        <span class="org-label">PE Solutions · UK Energy</span>
-        <h3>Energy Management Platforms — Cimpaas, Ensaar, Enalytics &amp; Reports</h3>
-        <p class="desc">Comprehensive portals for energy monitoring, customer/group management and partner services, built and maintained across two roles (Safal Infotech, then Pozitive Electricity &amp; Gas) using ASP.NET Core MVC, .NET Framework 4.6.1, Entity Framework and SQL Server.</p>
+    <!-- TIER B -->
+    <section style="padding-top:0;" id="dhanvantaricare">
+      <div class="container-narrow">
+        <div class="tier-divider" data-aos="fade-up">
+          <span class="tier-label">02 — In Progress</span>
+          <span class="line"></span>
+          <span class="tier-label">Planning &amp; architecture — personal, not public</span>
+        </div>
 
-        <div class="detail-columns">
-          <div>
-            <h4>Platform &amp; access control</h4>
-            <ul>
-              <li>Multi-level role-based access across admins, brokers, sub-brokers, agents, customers, and group users/sub-users</li>
-              <li>Dynamic, data-driven dashboards, forms and reports for real-time monitoring and decision-making</li>
-              <li>RESTful APIs consumed on a Clean (Onion) Architecture backend for scalable, maintainable services</li>
-              <li>New pages and feature enhancements delivered against Business Analyst change requests</li>
-              <li>Third-party API integrations extending platform functionality and interoperability</li>
-              <li>Responsive, interactive UI work in JavaScript and Angular</li>
-              <li>Task tracking and status reporting managed through monday.com</li>
-              <li>Claude, Codex and Cursor used to raise code quality and development speed</li>
-            </ul>
+        <article class="glass roadmap-card" data-aos="fade-up">
+          <div class="detail-head">
+            <div>
+              <span class="project-tag">Modular Clean/Onion Architecture · Dapper · Angular &amp; React</span>
+              <h3>DhanvantariCare</h3>
+            </div>
+            <span class="status-chip">Planning &amp; Architecture</span>
           </div>
-          <div>
-            <h4>Automation consoles built</h4>
-            <ul>
-  <li><strong>WelcomeMail</strong> — automated welcome-letter dispatch at contract start date</li>
-  <li><strong>COT_Notification</strong> — SLA-driven Change-of-Tenancy alerts with working-day calculations that exclude weekends and holidays; automated day-5 and day-7 reminders to owners and tenants, plus a management report generated after final COT completion</li>
-  <li><strong>BulkNotification</strong> — user selects an email template and uploads a customer/partner/internal-team Excel file; the console app reads the file and sends the email to everyone listed in it</li>
-  <li><strong>AutoEmailSend</strong> — parallel dispatch of welcome letters, partner updates and internal alerts</li>
-  <li><strong>System Notification</strong> — timely alerts for official events, release notes and policy updates</li>
-  <li><strong>Contract Verification</strong> — reads a contract file uploaded by a partner or internal user for a group or individual customer, and verifies the contract's rate and price against the system's own rate</li>
-</ul>
+          <p class="desc">A single, unified healthcare platform spanning hospitals, clinics, pharmacies, laboratories,
+            radiology, blood banks, ambulance services and home healthcare — plus a direct-to-patient portal. Designed
+            as a modular Clean/Onion-Architecture monolith, with event-driven module communication and dual
+            Angular/React frontends sharing one generated contract package. Deliberately launches as a modular monolith
+            first — full microservices extraction, native mobile apps and Kubernetes are explicitly out of scope until
+            later, approved phases.</p>
+
+          <div class="roadmap-table-wrap">
+            <table class="roadmap-table">
+              <thead>
+                <tr>
+                  <th>Phase</th>
+                  <th>Focus</th>
+                  <th>Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0–3</td>
+                  <td>Repository, architecture, auth &amp; authorization</td>
+                  <td>Secure foundation before any business data is introduced</td>
+                </tr>
+                <tr>
+                  <td>4–6</td>
+                  <td>Organization onboarding, branch ops &amp; branding</td>
+                  <td>Hospitals/branches administered without cross-tenant leakage</td>
+                </tr>
+                <tr>
+                  <td>7–10</td>
+                  <td>Patient registration, providers, appointments</td>
+                  <td>Care can be received with or without portal access</td>
+                </tr>
+                <tr>
+                  <td>11–17</td>
+                  <td>Clinical, diagnostics, lab, radiology, notifications</td>
+                  <td>Diagnostic intent flows to verified longitudinal reports</td>
+                </tr>
+                <tr>
+                  <td>18–21</td>
+                  <td>Pharmacy, billing, insurance, inventory</td>
+                  <td>Revenue-cycle workflows are transactional and reconciled</td>
+                </tr>
+                <tr>
+                  <td>22–24</td>
+                  <td>Recruitment, workforce, payroll, finance</td>
+                  <td>Auditable time tracking with strict data separation</td>
+                </tr>
+                <tr>
+                  <td>25–26</td>
+                  <td>Telemedicine, home healthcare, ambulance</td>
+                  <td>Extended &amp; emergency care with safe handoffs</td>
+                </tr>
+                <tr>
+                  <td>27–28</td>
+                  <td>Inpatient, surgery/theatre, equipment assets</td>
+                  <td>Concurrency-safe, historically traceable operations</td>
+                </tr>
+                <tr>
+                  <td>29–33</td>
+                  <td>Audit, interoperability, consent, GA hardening</td>
+                  <td>Platform resilience passes General Availability gates</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+          <p class="roadmap-note">34 small, dependency-gated phases in total — each requires documented acceptance
+            evidence and passing tests before it counts as done. Repositories and live progress are not public yet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section style="padding-top:0;" id="ratnakarlabs">
+      <div class="container-narrow">
+        <article class="glass roadmap-card" data-aos="fade-up">
+          <div class="detail-head">
+            <div>
+              <span class="project-tag">YARP Gateway · ASP.NET Core 10 · Dapper · Angular 22+ &amp; React 20+</span>
+              <h3>RatnakarLabs — Ratnakar Commerce Platform</h3>
+            </div>
+            <span class="status-chip">Planning &amp; Architecture</span>
+          </div>
+          <p class="desc">A microservices e-commerce platform built as a study and portfolio project — practicing a YARP
+            API Gateway, event-driven service integration, and parallel Angular and React clients built against one
+            shared backend contract. Structured across seven independently versioned repositories (services, Angular,
+            React, shared contracts, docs, DevOps, Postman). A mobile client is explicitly out of scope for now.</p>
+
+          <div class="roadmap-table-wrap">
+            <table class="roadmap-table">
+              <thead>
+                <tr>
+                  <th>Milestone</th>
+                  <th>Phases</th>
+                  <th>Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.1.0</td>
+                  <td>Phase 0</td>
+                  <td>Reproducible repos, local infra, CI, contracts, docs foundation</td>
+                </tr>
+                <tr>
+                  <td>0.2.0</td>
+                  <td>Phases 1–2</td>
+                  <td>Secure sign-in/profile, browsable catalog, seller inventory</td>
+                </tr>
+                <tr>
+                  <td>0.3.0</td>
+                  <td>Phase 3</td>
+                  <td>Persistent cart, wishlist and coupon journeys in both clients</td>
+                </tr>
+                <tr>
+                  <td>0.5.0</td>
+                  <td>Phases 4–5</td>
+                  <td>Idempotent checkout, inventory reservation, sandbox payment</td>
+                </tr>
+                <tr>
+                  <td>0.6.0</td>
+                  <td>Phases 6–7</td>
+                  <td>Shipment tracking, notifications, live updates, invoices</td>
+                </tr>
+                <tr>
+                  <td>0.8.0</td>
+                  <td>Phases 8–9</td>
+                  <td>Reviews, moderation, admin dashboards and reporting</td>
+                </tr>
+                <tr>
+                  <td>1.0.0</td>
+                  <td>Phase 10</td>
+                  <td>Hardened, observable, tested, containerized release</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="roadmap-note">Designed to demonstrate JWT/refresh-token rotation, database-per-service ownership,
+            Redis, RabbitMQ, SignalR live updates, Docker/Kubernetes/CI-CD and OpenTelemetry — repositories are not
+            public yet.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIER C -->
+    <section style="padding-top:0;">
+      <div class="container-narrow">
+        <div class="tier-divider" data-aos="fade-up">
+          <span class="tier-label">03 — Professional Projects</span>
+          <span class="line"></span>
+          <span class="tier-label">Client / employer work — described, not linked</span>
         </div>
 
-        <p class="desc" style="margin-top:4px;">Earlier, as an external developer for the same Pozitive Energy projects via Safal Infotech, this work also included a 60% page-load reduction on group pages through SQL and code-level optimization, stored-procedure/function tuning in SQL Server, and secure role-based platforms for partners and brokers.</p>
+        <article class="glass org-card" data-aos="fade-up">
+          <span class="org-label">PE Solutions · UK Energy</span>
+          <h3>Energy Management Platforms — Cimpaas, Ensaar, Enalytics &amp; Reports</h3>
+          <p class="desc">Comprehensive portals for energy monitoring, customer/group management and partner services,
+            built and maintained across two roles (Safal Infotech, then Pozitive Electricity &amp; Gas) using ASP.NET
+            Core MVC, .NET Framework 4.6.1, Entity Framework and SQL Server.</p>
 
-        <div class="chip-row">
-          <span class="chip">ASP.NET MVC (.NET Framework 4.6.1)</span><span class="chip">ASP.NET Core MVC</span>
-          <span class="chip">Entity Framework</span><span class="chip">ADO.NET</span><span class="chip">SQL Server</span><span class="chip">iText</span>
-          <span class="chip">Linq</span><span class="chip">Email Notifications</span><span class="chip">monday.com</span>
-        </div>
-      </article>
+          <div class="detail-columns">
+            <div>
+              <h4>Platform &amp; access control</h4>
+              <ul>
+                <li>Multi-level role-based access across admins, brokers, sub-brokers, agents, customers, and group
+                  users/sub-users</li>
+                <li>Dynamic, data-driven dashboards, forms and reports for real-time monitoring and decision-making</li>
+                <li>RESTful APIs consumed on a Clean (Onion) Architecture backend for scalable, maintainable services
+                </li>
+                <li>New pages and feature enhancements delivered against Business Analyst change requests</li>
+                <li>Third-party API integrations extending platform functionality and interoperability</li>
+                <li>Responsive, interactive UI work in JavaScript and Angular</li>
+                <li>Task tracking and status reporting managed through monday.com</li>
+                <li>Claude, Codex and Cursor used to raise code quality and development speed</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Automation consoles built</h4>
+              <ul>
+                <li><strong>WelcomeMail</strong> — automated welcome-letter dispatch at contract start date</li>
+                <li><strong>COT_Notification</strong> — SLA-driven Change-of-Tenancy alerts with working-day
+                  calculations that exclude weekends and holidays; automated day-5 and day-7 reminders to owners and
+                  tenants, plus a management report generated after final COT completion</li>
+                <li><strong>BulkNotification</strong> — user selects an email template and uploads a
+                  customer/partner/internal-team Excel file; the console app reads the file and sends the email to
+                  everyone listed in it</li>
+                <li><strong>AutoEmailSend</strong> — parallel dispatch of welcome letters, partner updates and internal
+                  alerts</li>
+                <li><strong>System Notification</strong> — timely alerts for official events, release notes and policy
+                  updates</li>
+                <li><strong>Contract Verification</strong> — reads a contract file uploaded by a partner or internal
+                  user for a group or individual customer, and verifies the contract's rate and price against the
+                  system's own rate</li>
+              </ul>
+            </div>
+          </div>
 
-      <article class="glass org-card" data-aos="fade-up">
-        <span class="org-label">Pozitive Electricity &amp; Gas · Modernization</span>
-        <h3>SmartPay</h3>
-        <p class="desc">The AI-assisted modernization of Cimpaas, Ensaar and Enalytics — three legacy platforms consolidated into one ASP.NET Core Web API and Angular 18/21 application covering customer, broker, agent, billing and registration workflows. Built on Clean (Onion) Architecture with JWT authentication, multi-level RBAC, and WhatsApp self-service via the WATI API for quotes, bills and registration status.</p>
-        <div class="chip-row">
-          <span class="chip">ASP.NET Core Web API</span><span class="chip">Dapper</span><span class="chip">PostgreSQL</span>
-          <span class="chip">Angular 18 / 21</span><span class="chip">JWT</span><span class="chip">WATI API</span>
-          <span class="chip">Clean / Onion Architecture</span><span class="chip">Claude · Codex · Cursor</span>
-        </div>
-      </article>
+          <p class="desc" style="margin-top:4px;">Earlier, as an external developer for the same Pozitive Energy
+            projects via Safal Infotech, this work also included a 60% page-load reduction on group pages through SQL
+            and code-level optimization, stored-procedure/function tuning in SQL Server, and secure role-based platforms
+            for partners and brokers.</p>
 
-      <article class="glass org-card" data-aos="fade-up">
-        <span class="org-label">WayToWeb Solutions · Retail &amp; Restaurant</span>
-        <h3>BIGPOS</h3>
-        <p class="desc">A cloud-based point-of-sale ecosystem — BIGPOS, BIGPOS Lite, BIG Waiter and WTWPOS — covering sales, inventory, payments, employees, reporting, split payments, refunds, discounts, loyalty and receipt generation, with real-time WebSocket terminal synchronization and cloud-to-local sync across POS hardware including thermal printers, barcode scanners and Kitchen/Customer Display Systems.</p>
-        <div class="chip-row">
-          <span class="chip">C#</span><span class="chip">ASP.NET / .NET</span><span class="chip">Web API</span><span class="chip">SQL Server</span>
-          <span class="chip">WebSocket</span><span class="chip">SFTP</span><span class="chip">Flutter</span><span class="chip">POS Hardware</span>
-        </div>
-      </article>
-    </div>
-  </section>
+          <div class="chip-row">
+            <span class="chip">ASP.NET MVC (.NET Framework 4.6.1)</span><span class="chip">ASP.NET Core MVC</span>
+            <span class="chip">Entity Framework</span><span class="chip">ADO.NET</span><span class="chip">SQL
+              Server</span><span class="chip">iText</span>
+            <span class="chip">Linq</span><span class="chip">Email Notifications</span><span
+              class="chip">monday.com</span>
+          </div>
+        </article>
 
-  <!-- Tech summary -->
-  <!-- <section style="padding-top:0;"> -->
+        <article class="glass org-card" data-aos="fade-up">
+          <span class="org-label">Pozitive Electricity &amp; Gas · Modernization</span>
+          <h3>SmartPay</h3>
+          <p class="desc">The AI-assisted modernization of Cimpaas, Ensaar and Enalytics — three legacy platforms
+            consolidated into one ASP.NET Core Web API and Angular 18/21 application covering customer, broker, agent,
+            billing and registration workflows. Built on Clean (Onion) Architecture with JWT authentication, multi-level
+            RBAC, and WhatsApp self-service via the WATI API for quotes, bills and registration status.</p>
+          <div class="chip-row">
+            <span class="chip">ASP.NET Core Web API</span><span class="chip">Dapper</span><span
+              class="chip">PostgreSQL</span>
+            <span class="chip">Angular 18 / 21</span><span class="chip">JWT</span><span class="chip">WATI API</span>
+            <span class="chip">Clean / Onion Architecture</span><span class="chip">Claude · Codex · Cursor</span>
+          </div>
+        </article>
+
+        <article class="glass org-card" data-aos="fade-up">
+          <span class="org-label">WayToWeb Solutions · Retail &amp; Restaurant</span>
+          <h3>BIGPOS</h3>
+          <p class="desc">A cloud-based point-of-sale ecosystem — BIGPOS, BIGPOS Lite, BIG Waiter and WTWPOS — covering
+            sales, inventory, payments, employees, reporting, split payments, refunds, discounts, loyalty and receipt
+            generation, with real-time WebSocket terminal synchronization and cloud-to-local sync across POS hardware
+            including thermal printers, barcode scanners and Kitchen/Customer Display Systems.</p>
+          <div class="chip-row">
+            <span class="chip">C#</span><span class="chip">ASP.NET / .NET</span><span class="chip">Web API</span><span
+              class="chip">SQL Server</span>
+            <span class="chip">WebSocket</span><span class="chip">SFTP</span><span class="chip">Flutter</span><span
+              class="chip">POS Hardware</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tech summary -->
+    <!-- <section style="padding-top:0;"> -->
     <!-- <div class="container-narrow"> -->
-      <!-- <div class="section-head" data-aos="fade-up"> -->
-        <!-- <span class="code-label">&lt; at a glance /&gt;</span> -->
-        <!-- <h2>Project technology summary</h2> -->
-      <!-- </div> -->
-      <!-- <div class="tech-summary-grid" data-aos="fade-up"> -->
-        <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Shipped personal projects</div></div> -->
-        <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">In-progress architecture builds</div></div> -->
-        <!-- <div class="glass tech-summary-item"><div class="num">3</div><div class="lbl">Professional platforms</div></div> -->
-        <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Frontend frameworks — Angular &amp; React</div></div> -->
-        <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Databases — SQL Server &amp; PostgreSQL</div></div> -->
-      <!-- </div> -->
+    <!-- <div class="section-head" data-aos="fade-up"> -->
+    <!-- <span class="code-label">&lt; at a glance /&gt;</span> -->
+    <!-- <h2>Project technology summary</h2> -->
     <!-- </div> -->
-  <!-- </section> -->
+    <!-- <div class="tech-summary-grid" data-aos="fade-up"> -->
+    <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Shipped personal projects</div></div> -->
+    <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">In-progress architecture builds</div></div> -->
+    <!-- <div class="glass tech-summary-item"><div class="num">3</div><div class="lbl">Professional platforms</div></div> -->
+    <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Frontend frameworks — Angular &amp; React</div></div> -->
+    <!-- <div class="glass tech-summary-item"><div class="num">2</div><div class="lbl">Databases — SQL Server &amp; PostgreSQL</div></div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
 
-  <section style="padding-top:0;">
-    <div class="container-narrow" data-aos="fade-up" style="text-align:center;">
-      <a href="/#contact" class="btn btn-primary">Get in touch <i class="bi bi-send"></i></a>
-      <a href="https://github.com/HiteshDhandhla" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-left:14px;"><i class="bi bi-github"></i> GitHub profile</a>
+    <section style="padding-top:0;">
+      <div class="container-narrow" data-aos="fade-up" style="text-align:center;">
+        <a href="/#contact" class="btn btn-primary">Get in touch <i class="bi bi-send"></i></a>
+        <a href="https://github.com/HiteshDhandhla" target="_blank" rel="noopener" class="btn btn-ghost"
+          style="margin-left:14px;"><i class="bi bi-github"></i> GitHub profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-narrow footer-row">
+      <div class="footer-brand">Hitesh Dhandhla<span>.NET Full Stack Developer</span></div>
+      <div class="footer-links">
+        <a href="https://github.com/HiteshDhandhla" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/hitesh-dhandhla" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hitesh.dhandhla@gmail.com">Email</a>
+      </div>
+      <!-- <div class="footer-meta">&copy; <span id="footer-year"></span> Hitesh Dhandhla · Built with HTML, CSS &amp; JavaScript</div> -->
+      <div class="footer-meta">Hitesh Dhandhla</div>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer>
-  <div class="container-narrow footer-row">
-    <div class="footer-brand">Hitesh Dhandhla<span>.NET Full Stack Developer</span></div>
-    <div class="footer-links">
-      <a href="https://github.com/HiteshDhandhla" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/hitesh-dhandhla" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:hitesh.dhandhla@gmail.com">Email</a>
-    </div>
-    <!-- <div class="footer-meta">&copy; <span id="footer-year"></span> Hitesh Dhandhla · Built with HTML, CSS &amp; JavaScript</div> -->
-    <div class="footer-meta">Hitesh Dhandhla</div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="/assets/js/theme.js"></script>
-<script src="/assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="/assets/js/theme.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
